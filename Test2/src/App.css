@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: gray;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-invite {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.item-icon {
+  color: gray;
+}
+
+.item-name {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.txt-phone {
+  flex: 1;
+  text-align: left;
+  color: gray;
+  font-size: 18px;
+}
