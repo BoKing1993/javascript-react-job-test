@@ -19,8 +19,9 @@
 */
 
 function get(obj, property, defaultValue) {
-  if (!property && typeof property !== string) return defaultValue;
+  if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return defaultValue;
+  if (!property || typeof property !== 'string') return defaultValue;
   const propertyArr = property.split('.');
   return propertyArr.reduce((currObj, key) =>
-    (currObj && currObj[key] !== 'undefined') ? currObj[key] : defaultValue, obj);
+    (currObj && currObj[key] !== undefined) ? currObj[key] : defaultValue, obj);
 }
